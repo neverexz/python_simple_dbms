@@ -40,7 +40,8 @@ def base_select():
             sql = input()
             cursor.execute(sql)
             result = cursor.fetchall()
-            print(result)
+            for res in result:
+                print(res)
     except pymysql.Error as e:
         print("Ошибка ", e)
 

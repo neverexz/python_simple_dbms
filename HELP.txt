@@ -1,8 +1,7 @@
 select USER();
 select * from mysql.user;
-create USER 'egor'@'localhost' identified by 'admin';
-show grants for 'egor'@'localhost';
-grant SELECT ON cursed.hello TO 'egor'@'localhost';
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'password';
+grant SELECT ON test1.test_table1 TO 'jeffrey'@'localhost';
 SHOW GRANTS FOR 'egor'@'localhost';
 GRANT ALL PRIVILEGES ON cursed.hello TO 'egor'@'localhost';
 REVOKE SELECT ON cursed.hello FROM 'egor'@'localhost';
